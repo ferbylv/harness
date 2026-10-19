@@ -1,0 +1,23 @@
+name: Bug
+description: 某个已经做了的行为坏了
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: 发生了什么
+      description: 期望是什么，实际是什么。
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: 怎么复现
+      description: 命令、输入、相关环境变量（不要贴 API key）。
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Python 版本
+      placeholder: "3.13"

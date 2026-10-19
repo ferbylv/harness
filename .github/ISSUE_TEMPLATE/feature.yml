@@ -1,0 +1,17 @@
+name: 功能
+description: 想接 STATUS.md 里还没做的能力，或提出新的扩展
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: 想做什么
+      description: 如果 STATUS.md 里已有对应条目，写出编号。
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: 为什么现在需要
+    validations:
+      required: true
